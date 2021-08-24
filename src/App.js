@@ -1,14 +1,8 @@
 import "./App.css";
 import logo from "./images/logo.svg";
-import {
-  CaretDownOutlined,
-  CaretUpOutlined,
-  TeamOutlined,
-  RocketOutlined,
-  AimOutlined,
-} from "@ant-design/icons";
+import { CaretDownOutlined, CaretUpOutlined } from "@ant-design/icons";
+import { Dropdown } from "./components/dropdown";
 import { Component } from "react";
-import { Modal } from "antd";
 
 export class App extends Component {
   constructor(props) {
@@ -35,29 +29,10 @@ export class App extends Component {
               <CaretDownOutlined />
             )}
           </div>
-          <>
-            <Modal
-              title="Basic Modal"
-              visible={this.state.modalVisible}
-              onOk={this.handleOk.bind(this)}
-              onCancel={this.handleCancel.bind(this)}
-              okText={"Location"}
-              cancelText={"Contact Us"}
-            >
-              <div className={"modal-content-item"}>
-                <AimOutlined className={"modal-item-icon"} />
-                <p className={"modal-content-text"}>Our Mission</p>
-              </div>
-              <div className={"modal-content-item"}>
-                <TeamOutlined />
-                <p className={"modal-content-text"}>Meet the Team</p>
-              </div>
-              <div className={"modal-content-item"}>
-                <RocketOutlined />
-                <p className={"modal-content-text"}>Careers</p>
-              </div>
-            </Modal>
-          </>
+          <Dropdown
+            modalVisible={this.state.modalVisible}
+            closeModal={this._closeModal.bind(this)}
+          />
         </div>
       </div>
     );
@@ -65,14 +40,6 @@ export class App extends Component {
 
   handleModalClick() {
     this.setState({ modalVisible: true });
-  }
-
-  handleOk() {
-    this._closeModal();
-  }
-
-  handleCancel() {
-    this._closeModal();
   }
 
   _closeModal() {
