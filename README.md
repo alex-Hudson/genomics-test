@@ -1,2 +1,2 @@
 # genomics-test
-Test foir Genomics PLC
+Test for Genomics PLC
