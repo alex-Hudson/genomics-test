@@ -1,8 +1,7 @@
 import "./App.css";
 import logo from "./images/logo.svg";
-import { CaretDownOutlined, CaretUpOutlined } from "@ant-design/icons";
-import { Dropdown } from "./components/dropdown";
 import { Component } from "react";
+import AboutUsButton from "./components/aboutUsButton";
 
 /**
  * Class to render App containing header bar and modal
@@ -21,16 +20,9 @@ export class App extends Component {
         <div className="App-border-header">
           <img src={logo} className={"acme-logo"} alt="ACME corp"></img>
           <div className={"home-btn"}>Home</div>
-          <div className={"about-btn"} onClick={this._openModal.bind(this)}>
-            About Us
-            {this.state.modalVisible ? (
-              <CaretUpOutlined />
-            ) : (
-              <CaretDownOutlined />
-            )}
-          </div>
-          <Dropdown
+          <AboutUsButton
             modalVisible={this.state.modalVisible}
+            openModal={this._openModal.bind(this)}
             closeModal={this._closeModal.bind(this)}
           />
         </div>

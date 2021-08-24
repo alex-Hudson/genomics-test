@@ -8,6 +8,7 @@ Test for Genomics PLC
 2. Run npm install
 3. Run yarn start
 4. Go to http://localhost:3000/
+5. To run tests run 'yarn test'
 
 # Next Steps If I Had Time
 
