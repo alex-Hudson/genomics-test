@@ -1,7 +1,16 @@
 import { Modal } from "antd";
-import { TeamOutlined, RocketOutlined, AimOutlined } from "@ant-design/icons";
+import {
+  TeamOutlined,
+  RocketOutlined,
+  AimOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
 import { Component } from "react";
 
+/**
+ * Class to display Dropdown with options.
+ * ENH: Pass options as props?
+ */
 export class Dropdown extends Component {
   render() {
     return (
@@ -11,7 +20,10 @@ export class Dropdown extends Component {
         onOk={this.handleOk.bind(this)}
         onCancel={this.handleCancel.bind(this)}
         okText={"Location"}
+        okButtonProps={{ type: "default" }}
         cancelText={"Contact Us"}
+        width={230}
+        style={{ top: 60, left: "30vw" }}
       >
         <div className={"modal-content-item"}>
           <AimOutlined className={"modal-item-icon"} />
@@ -25,6 +37,13 @@ export class Dropdown extends Component {
           <RocketOutlined />
           <p className={"modal-content-text"}>Careers</p>
         </div>
+        <a
+          href={"https://github.com/alex-Hudson"}
+          className={"modal-content-item"}
+        >
+          <GithubOutlined />
+          <p className={"modal-content-text"}>My GitHub page</p>
+        </a>
       </Modal>
     );
   }

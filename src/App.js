@@ -4,6 +4,9 @@ import { CaretDownOutlined, CaretUpOutlined } from "@ant-design/icons";
 import { Dropdown } from "./components/dropdown";
 import { Component } from "react";
 
+/**
+ * Class to render App containing header bar and modal
+ */
 export class App extends Component {
   constructor(props) {
     super(props);

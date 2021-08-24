@@ -2,6 +2,18 @@
 
 Test for Genomics PLC
 
+# To run:
+
+1. Checkout the git repo
+2. Run npm install
+3. Run yarn start
+4. Go to http://localhost:3000/
+
+# Next Steps If I Had Time
+
+1. Improve tests
+2. Perhaps add localisation engine for users in other countries
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
