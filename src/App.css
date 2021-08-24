@@ -15,6 +15,7 @@
   position: fixed;
   top: 2.5vh;
   left: 75vw;
+  cursor: pointer;
 }
 
 .about-btn {
@@ -22,4 +23,31 @@
   position: fixed;
   top: 2.5vh;
   left: 80vw;
+  cursor: pointer;
+}
+
+.modal-content-item {
+  display: flex;
+}
+
+.modal-content-item:hover {
+  background-color: lightgray;
+}
+
+.modal-content-text {
+  margin-left: 10px;
+}
+
+.modal-content-item > .anticon {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.ant-modal-header {
+  display: none;
+}
+
+.ant-modal-footer {
+  background-color: lightgray !important;
 }
