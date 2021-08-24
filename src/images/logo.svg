@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="120" height="120" viewBox="0 0 120 120" xml:space="preserve">
+<desc>Created with Fabric.js 4.2.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="61617365-4e25-4375-9246-ea780416073d"  >
+</g>
+<g transform="matrix(1 0 0 1 60 60)" id="3c09f31c-cb24-4f53-b387-8bdea4160689"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-60" y="-60" rx="0" ry="0" width="120" height="120" />
+</g>
+<g transform="matrix(1 0 0 1 41 20.93)" style="" id="1b92efdc-1c19-425a-8c75-835ac64b18cc"  >
+		<text xml:space="preserve" font-family="Raleway" font-size="27" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-37.53" y="8.48" >ACME</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 33.5 41)" style="" id="7040fc32-49be-4c4f-a2c2-4e8fa15e17b6"  >
+		<rect opacity="0" fill="rgb(255,255,255)" x="-48" y="-6.21" width="96" height="12.43"></rect>
+		<text xml:space="preserve" font-family="Lato" font-size="11" font-style="normal" font-weight="400" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-29.44" y="3.46" >Corperation</tspan></text>
+</g>
+</svg>

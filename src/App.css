@@ -3,3 +3,23 @@
   background-color: #152238;
   width: 100%;
 }
+
+.acme-logo {
+  top: 0.5vh;
+  position: relative;
+  left: 100px;
+}
+
+.home-btn {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 75vw;
+}
+
+.about-btn {
+  color: white;
+  position: fixed;
+  top: 2.5vh;
+  left: 80vw;
+}
