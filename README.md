@@ -13,6 +13,7 @@ Test for Genomics PLC
 
 1. Improve tests
 2. Perhaps add localisation engine for users in other countries
+3. Improve styling
 
 # Getting Started with Create React App
 

@@ -21,10 +21,7 @@ export class App extends Component {
         <div className="App-border-header">
           <img src={logo} className={"acme-logo"} alt="ACME corp"></img>
           <div className={"home-btn"}>Home</div>
-          <div
-            className={"about-btn"}
-            onClick={this.handleModalClick.bind(this)}
-          >
+          <div className={"about-btn"} onClick={this._openModal.bind(this)}>
             About Us
             {this.state.modalVisible ? (
               <CaretUpOutlined />
@@ -41,10 +38,16 @@ export class App extends Component {
     );
   }
 
-  handleModalClick() {
+  /**
+   * Display modal
+   */
+  _openModal() {
     this.setState({ modalVisible: true });
   }
 
+  /**
+   * Hide modal
+   */
   _closeModal() {
     this.setState({ modalVisible: false });
   }

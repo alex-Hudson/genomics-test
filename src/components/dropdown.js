@@ -9,10 +9,12 @@ import { Component } from "react";
 
 /**
  * Class to display Dropdown with options.
- * ENH: Pass options as props?
+ * ENH: Pass options as props
  */
 export class Dropdown extends Component {
   render() {
+    const dropdownContents = this._getDropdownContents();
+    dropdownContents.push(this._getGitHubLinkElement());
     return (
       <Modal
         title="Basic Modal"
@@ -25,38 +27,63 @@ export class Dropdown extends Component {
         width={230}
         style={{ top: 60, left: "30vw" }}
       >
-        <div className={"modal-content-item"}>
-          <AimOutlined className={"modal-item-icon"} />
-          <p className={"modal-content-text"}>Our Mission</p>
-        </div>
-        <div className={"modal-content-item"}>
-          <TeamOutlined />
-          <p className={"modal-content-text"}>Meet the Team</p>
-        </div>
-        <div className={"modal-content-item"}>
-          <RocketOutlined />
-          <p className={"modal-content-text"}>Careers</p>
-        </div>
-        <a
-          href={"https://github.com/alex-Hudson"}
-          className={"modal-content-item"}
-        >
-          <GithubOutlined />
-          <p className={"modal-content-text"}>My GitHub page</p>
-        </a>
+        {dropdownContents}
       </Modal>
     );
   }
 
+  /**
+   * Stub - could have Ok handling in the future
+   */
   handleOk() {
     this._closeModal();
   }
 
+  /**
+   * Close the modal
+   */
   handleCancel() {
     this._closeModal();
   }
 
   _closeModal() {
     this.props.closeModal();
+  }
+
+  /**
+   * Get items for content of dropdown
+   */
+  _getDropdownContents() {
+    //ENH: Get this from props
+    const iconInfo = [
+      { icon: AimOutlined, text: "Our Mission" },
+      { icon: TeamOutlined, text: "Meet the Team" },
+      { icon: RocketOutlined, text: "Careers" },
+    ];
+
+    return iconInfo.map((info) => {
+      return (
+        <div className={"modal-content-item"} key={info.text}>
+          <info.icon className={"modal-item-icon"} />
+          <p className={"modal-content-text"}>{info.text}</p>
+        </div>
+      );
+    });
+  }
+
+  /**
+   * Get jsx element for linking to GitHub
+   */
+  _getGitHubLinkElement() {
+    return (
+      <a
+        href={"https://github.com/alex-Hudson"}
+        className={"modal-content-item"}
+        key={"GitHub"}
+      >
+        <GithubOutlined />
+        <p className={"modal-content-text"}>My GitHub page</p>
+      </a>
+    );
   }
 }
