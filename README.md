@@ -1,6 +1,6 @@
 # genomics-test
 
-Test foir Genomics PLC
+Test for Genomics PLC
 
 # Getting Started with Create React App
 
